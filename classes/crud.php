@@ -205,7 +205,7 @@ class Crud extends Config
 
 
 	
-	public function addUser($value)
+	public function addUser($post)
 	{
 
 		$name = $this->cleanse($post['name']);
@@ -227,7 +227,7 @@ class Crud extends Config
 	}
 
 
-		public function addDiagnosis($value)
+		public function addDiagnosis($post)
 	{
 
 		$f1 = isset($post['f1']) ? 1: 0;
